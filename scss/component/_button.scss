@@ -9,30 +9,50 @@
     @include desktop {
       padding: 10px 30px;
     }
-  } 
+} 
 
-  .btn + .btn {
-    @include desktop {
-      margin-left: 10px;
-    }  
+.btn + .btn {
+  @include desktop {
+    margin-left: 10px;
+  }  
+}
+
+.default {
+  background-color: $default;
+  &:hover {
+    background: $default-light;
+    @include transition;
   }
-  
-  .default {
-    background-color: $link;
+}
+
+.error {
+  background-color: $error;
+  &:hover {
+    background: $error-light;
+    @include transition;
   }
-  
-  .error {
-    background-color: $error;
+}
+
+.info {
+  background-color: $info;
+  &:hover {
+    background: $info-light;
+    @include transition;
   }
-  
-  .info {
-    background-color: $info;
+}
+
+.success {
+  background-color: $success;
+  &:hover {
+    background: $success-light;
+    @include transition;
   }
-  
-  .success {
-    background-color: $success;
+}
+
+.warning {
+  background-color: $warning;
+  &:hover {
+    background: $warning-light;
+    @include transition;
   }
-  
-  .warning {
-    background-color: $warning;
-  }
+}

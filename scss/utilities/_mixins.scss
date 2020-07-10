@@ -4,3 +4,8 @@
       @content;
     }
 }
+
+// Transition //
+@mixin transition {
+    transition-duration: 1s;
+}
