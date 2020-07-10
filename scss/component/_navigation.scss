@@ -22,10 +22,9 @@
     @include desktop {
       flex-basis: 100px;
     }
-  } 
-  
-  .nav-link:hover {
-    color: #fff;
-    background-color: $h1-color;
-  }
+    &:hover {
+      color: #fff;
+      background-color: $h1-color;
+    }  
+ }
 
