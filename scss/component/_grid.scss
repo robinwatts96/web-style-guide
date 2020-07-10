@@ -1,11 +1,20 @@
 .container {
     padding: 0 10px;
+    @include desktop {
+      max-width: $max-width;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   
   .row {
     display: flex;
     flex-direction: column;
     padding: 1em 10px;
+    @include desktop {
+      flex-direction: row;
+    }
   }
   
   [class^=col] {
@@ -14,6 +23,18 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+    }
+  }
+
+  [class^=col] + [class^=col] {
+    @include desktop {
+      margin-left: 10px;
+    }
   }
   
   .theme.col-1 {
@@ -67,3 +88,86 @@
   .card {
     flex-basis: 100%;
   }
+  
+  .centered {
+    @include desktop {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .col-1 {
+    @include desktop {
+      flex-basis: 8.33%;
+    }
+  }
+  
+  .col-2 {
+    @include desktop {
+      flex-basis: 16.67%;
+    }
+  }
+  
+  .col-3 {
+    @include desktop {
+      flex-basis: 25.00%;
+    }
+  }
+  
+  .col-4 {
+    @include desktop {
+      flex-basis: 33.33%;
+    }  
+  }
+  
+  .col-5 {
+    @include desktop {
+      flex-basis: 41.67%;
+    }
+  }
+  
+  .col-6 {
+    @include desktop {
+      flex-basis: 50.00%;
+    }  
+  }
+  
+  .col-7 {
+    @include desktop {
+      flex-basis: 58.33%;
+    }  
+  }
+  
+  .col-8 {
+    @include desktop {
+      flex-basis: 66.67%;
+    }  
+  }
+  
+  .col-9 {
+    @include desktop {
+      flex-basis: 75.00%
+    }  
+  }
+  
+  .col-10 {
+    @include desktop {
+      flex-basis: 83.33%;
+    }  
+  }
+  
+  .col-11 {
+    @include desktop {
+      flex-basis: 91.67%;
+    }
+  }
+  
+  .col-12 {
+    @include desktop {
+      flex-basis: 100%;
+    }  
+  }
+
+
+  

@@ -22,3 +22,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .logo {
+    @include desktop {
+      margin-left: initial;
+      margin-right: initial;
+    }  
+  }
